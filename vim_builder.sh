@@ -1,7 +1,7 @@
 touch $HOME/.env_extras
 mkdir -p $HOME/apps
 mkdir -p $HOME/.config/nvim
-cp nvim_init.vim $HOME/config/nvim/init.vim
+cp nvim_init.vim $HOME/.config/nvim/init.vim
 cd $HOME/apps
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
