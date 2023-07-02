@@ -89,3 +89,6 @@ au User Ncm2Plugin call ncm2#register_source({
     \ 'on_complete': ['ncm2#on_complete#omni', 'csscomplete#CompleteCSS'],
     \ })
 "====NCM2 Config Ends===="
+
+" Fix issue with completion manager (change path to your python)
+let g:python3_host_prog = '/usr/bin/python3'
