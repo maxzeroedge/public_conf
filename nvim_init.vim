@@ -1,5 +1,16 @@
 call plug#begin()
-Plug 'roxma/nvim-completion-manager'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdcommenter'
+Plug 'pangloss/vim-javascript'
+Plug 'iamcco/coc-tailwindcss'
+Plug 'evanleck/vim-svelte'
+"Substituting with ncm2
+"Plug 'roxma/nvim-completion-manager'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'brooth/far.vim'
@@ -16,6 +27,9 @@ Plug 'ncm2/ncm2-tagprefix'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'ncm2/ncm2-markdown-subscope'
 Plug 'ncm2/ncm2-rst-subscope'
+Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+Plug 'mhartington/nvim-typescript'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'mfussenegger/nvim-jdtls'
 call plug#end()
@@ -89,6 +103,5 @@ au User Ncm2Plugin call ncm2#register_source({
     \ 'on_complete': ['ncm2#on_complete#omni', 'csscomplete#CompleteCSS'],
     \ })
 "====NCM2 Config Ends===="
-
-" Fix issue with completion manager (change path to your python)
+set encoding=UTF-8
 let g:python3_host_prog = '/usr/bin/python3'
