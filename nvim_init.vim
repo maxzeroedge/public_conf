@@ -28,7 +28,6 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'ncm2/ncm2-markdown-subscope'
 Plug 'ncm2/ncm2-rst-subscope'
 Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-Plug 'mhartington/nvim-typescript'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'mfussenegger/nvim-jdtls'
@@ -105,3 +104,4 @@ au User Ncm2Plugin call ncm2#register_source({
 "====NCM2 Config Ends===="
 set encoding=UTF-8
 let g:python3_host_prog = '/usr/bin/python3'
+set ts=4 sw=4
