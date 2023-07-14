@@ -28,8 +28,11 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'ncm2/ncm2-markdown-subscope'
 Plug 'ncm2/ncm2-rst-subscope'
 Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-
+Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Plug 'mfussenegger/nvim-jdtls'
 call plug#end()
 
@@ -105,3 +108,4 @@ au User Ncm2Plugin call ncm2#register_source({
 set encoding=UTF-8
 let g:python3_host_prog = '/usr/bin/python3'
 set ts=4 sw=4
+:AirlineTheme bubblegum
