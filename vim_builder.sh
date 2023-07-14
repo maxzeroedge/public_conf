@@ -12,4 +12,12 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 nvim +PlugInstall +UpdateRemotePlugins +qa
 sed -i.bu 's/async=True/**{"async": True}/' ~/.local/share/nvim/plugged/nvim-completion-manager/pythonx/cm.py
 sed -i.bu 's/async=True/**{"async": True}/' ~/.local/share/nvim/plugged/nvim-completion-manager/pythonx/cm_core.py
-
+#Install PowerFonts
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1 powerfonts
+# install
+cd powerfonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf powerfonts

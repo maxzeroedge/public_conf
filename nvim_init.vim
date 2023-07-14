@@ -108,4 +108,6 @@ au User Ncm2Plugin call ncm2#register_source({
 set encoding=UTF-8
 let g:python3_host_prog = '/usr/bin/python3'
 set ts=4 sw=4
-:AirlineTheme bubblegum
+"===== Airline configuration ====="
+let g:airline_theme='bubblegum'
+let g:airline#extensions#tabline#enabled = 1
